@@ -47,8 +47,8 @@ public class Main implements ApplicationListener {
     }
 
     private void doneLoading() {
-        Model ship = assets.get("data/brain-simple-mesh.g3dj", Model.class);
-        ModelInstance shipInstance = new ModelInstance(ship);
+        Model brainModel = assets.get("data/brain-simple-mesh.g3dj", Model.class);
+        ModelInstance shipInstance = new ModelInstance(brainModel);
         instances.add(shipInstance);
         loading = false;
     }
